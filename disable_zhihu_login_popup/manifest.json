@@ -1,0 +1,17 @@
+{
+    "name": "edge helper",
+    "version": "0.0.0.1",
+    "manifest_version": 3,
+    "description": "A chromium extension that optimizes your online experience.",
+    "content_scripts": [
+      {
+        "matches": [
+          "https://*.zhihu.com/*"
+        ],
+        "js": [
+          "js/zhihu/init.js"
+        ],
+        "run_at": "document_end"
+      }
+    ]
+  }
