@@ -12,6 +12,15 @@
           "js/zhihu/init.js"
         ],
         "run_at": "document_end"
+      },
+      {
+        "matches": [
+          "https://blog.csdn.net/*"
+        ],
+        "js": [
+          "js/csdn/csdn_copy.js"
+        ],
+        "run_at": "document_end"
       }
     ]
   }
