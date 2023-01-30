@@ -18,6 +18,15 @@
           "js/zhihu.js"
         ],
         "run_at": "document_end"
+      },
+      {
+        "matches": [
+          "https://*.csdn.net/*"
+        ],
+        "js": [
+          "js/csdn_copy.js"
+        ],
+        "run_at": "document_end"
       }
     ]
 }
