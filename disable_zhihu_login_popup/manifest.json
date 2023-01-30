@@ -3,6 +3,9 @@
     "version": "0.0.0.1",
     "manifest_version": 3,
     "description": "A chromium extension that optimizes your online experience.",
+    "permissions": [
+      "storage"
+    ],
     "action": {
       "default_popup": "options.html"
     },
