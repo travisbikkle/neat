@@ -3,24 +3,18 @@
     "version": "0.0.0.1",
     "manifest_version": 3,
     "description": "A chromium extension that optimizes your online experience.",
+    "action": {
+      "default_popup": "options.html"
+    },
     "content_scripts": [
       {
         "matches": [
           "https://*.zhihu.com/*"
         ],
         "js": [
-          "js/zhihu/init.js"
-        ],
-        "run_at": "document_end"
-      },
-      {
-        "matches": [
-          "https://blog.csdn.net/*"
-        ],
-        "js": [
-          "js/csdn/csdn_copy.js"
+          "js/zhihu.js"
         ],
         "run_at": "document_end"
       }
     ]
-  }
+}
