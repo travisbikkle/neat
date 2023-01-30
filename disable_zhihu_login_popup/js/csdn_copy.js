@@ -1,4 +1,10 @@
 (function() {
     'use strict';
-    document.designMode = 'on'
-})();
+    chrome.storage.local.get(['design_mode']).then(r => {
+        let mode = 'off'
+        if (r) {
+            mode = 'on'
+        }
+        document.designMode = mode
+    })
+}());
