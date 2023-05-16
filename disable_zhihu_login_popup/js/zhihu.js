@@ -47,4 +47,12 @@
     const header = headerClass.map(clazz => document.querySelector(clazz)).find(el => el)
     loginButtonObserver.observe(header, { childList: true, subtree: true })
     loginButtonObserverCallback()
+
+    // 右下角
+    setInterval(() => {
+        const rightCorner = document.querySelector('.css-1ynzxqw')
+        if (rightCorner) {
+            rightCorner.style.display='none'
+        }
+    }, 100)
 })();
