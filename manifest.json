@@ -1,10 +1,11 @@
 {
-    "name": "edge helper",
-    "version": "0.0.0.2",
+    "name": "Neat 干净上网",
+    "version": "0.0.0.1",
     "manifest_version": 3,
-    "description": "A chromium extension that optimizes your online experience.",
+    "description": "A chromium extension that boost your online experience.",
     "permissions": [
-      "storage"
+      "storage",
+      "clipboardWrite"
     ],
     "action": {
       "default_popup": "options.html"
@@ -24,7 +25,7 @@
           "https://*.csdn.net/*"
         ],
         "js": [
-          "js/csdn_copy.js"
+          "js/copy.js"
         ],
         "run_at": "document_end"
       }

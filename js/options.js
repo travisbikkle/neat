@@ -1,5 +1,5 @@
 $(document).ready(() => {
-    $('#csdn_copy_enable').change(() => {
+    $('#design_mode_switch').change(() => {
         x=$(this)
         checked=x.is(":checked")
         if (checked) {

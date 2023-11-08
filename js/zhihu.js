@@ -49,10 +49,15 @@
     loginButtonObserverCallback()
 
     // 右下角
-    setInterval(() => {
-        const rightCorner = document.querySelector('.css-1ynzxqw')
-        if (rightCorner) {
-            rightCorner.style.display='none'
+    let intervalId = setInterval(() => {
+        let buttons = document.querySelectorAll('.Button--primary')
+        // console.log('interval running')
+        for (let button of buttons) {
+            if(button.innerText === '立即登录/注册'){
+                button.parentNode.parentNode.style.display='none'
+                console.log('interval cleared')
+                // clearInterval(intervalId)
+            }
         }
-    }, 100)
+    }, 500)
 })();
