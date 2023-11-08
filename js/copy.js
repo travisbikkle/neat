@@ -27,6 +27,7 @@
         for (let selectedElement of selected) {
             result += selectedElement.outerHTML
         }
+        // console.log("debug: " + result)
 
         writeDataToClipboard(createHtmlBlob(result)).then(
             () => console.log("success")
@@ -34,6 +35,10 @@
             () => console.log("failed")
         )
     }
+
+    (function () {
+        document.querySelectorAll('pre,code').forEach(e => e.style.userSelect='auto')
+    })()
 
     document.addEventListener('mouseup', copy);
 
