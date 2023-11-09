@@ -37,7 +37,7 @@
     }
 
     (function () {
-        document.querySelectorAll('pre,code').forEach(e => e.style.userSelect='auto')
+        document.querySelectorAll('*').forEach(e => e.style.userSelect='auto')
     })()
 
     document.addEventListener('mouseup', copy);

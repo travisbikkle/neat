@@ -2,7 +2,7 @@
     "name": "Neat 干净上网",
     "version": "0.0.0.1",
     "manifest_version": 3,
-    "description": "A chromium extension that boost your online experience.",
+    "description": "还你一个不流氓的简中网络环境",
     "permissions": [
       "storage",
       "clipboardWrite"
@@ -22,7 +22,9 @@
       },
       {
         "matches": [
-          "https://*.csdn.net/*"
+          "https://*.csdn.net/*",
+          "https://*.qidian.com/*",
+          "https://qidian.com/*"
         ],
         "js": [
           "js/copy.js"
