@@ -22,12 +22,16 @@
         const selection = window.getSelection();
         if (!selection.rangeCount) return;
         let range = selection.getRangeAt(0);
-        let selected = range.cloneContents().children
+        let selected = range.cloneContents().childNodes
         let result = ""
         for (let selectedElement of selected) {
+            if (selectedElement.nodeType === Node.TEXT_NODE) {
+                result += selectedElement.textContent
+                continue
+            }
             result += selectedElement.outerHTML
         }
-        // console.log("debug: " + result)
+        console.debug("copied: " + result)
 
         writeDataToClipboard(createHtmlBlob(result)).then(
             () => console.log("success")
