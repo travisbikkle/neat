@@ -22,6 +22,18 @@
       },
       {
         "matches": [
+          "https://*.bilibili.com/*"
+        ],
+        "js": [
+          "js/bilibili.js"
+        ],
+        "css": [
+          "css/bilibili.css"
+        ],
+        "run_at": "document_end"
+      },
+      {
+        "matches": [
           "https://*.csdn.net/*",
           "https://*.qidian.com/*",
           "https://qidian.com/*"
