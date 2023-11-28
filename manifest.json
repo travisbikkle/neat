@@ -1,6 +1,6 @@
 {
     "name": "Neat（干净上网，知乎登录屏蔽，csdn、起点免登录复制）",
-    "version": "0.0.0.2",
+    "version": "0.0.0.3",
     "manifest_version": 3,
     "description": "一款免费的，好用的，饱受赞誉的浏览器辅助工具，帮助你浏览部分网站、复制某些内容而不需要登录!",
     "permissions": [
