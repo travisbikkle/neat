@@ -38,9 +38,10 @@
           "https://*.qidian.com/*",
           "https://qidian.com/*"
         ],
-        "js": [
-          "js/copy.js"
-        ],
+          "js": [
+              "js/jquery.min.js",
+              "js/copy.js"
+          ],
         "run_at": "document_end"
       }
     ]
